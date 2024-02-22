@@ -1,0 +1,26 @@
+@use '../../sass/Utils/library' as *;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 66px 0 29px 0;
+    width: 100%;
+    background-color: $color-bg-footer;
+    @include bp (mobile) {
+        font-size: 12px;
+        padding: 66px 0 58px 0;
+        text-align: center;
+    }
+    & img{
+        width: 122px;
+        height: 40px;
+    }
+    & p{
+        color: $color-font-secondary;
+        padding-bottom: 30px;
+        @include bp (mobile) {
+            padding: 9px 122px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@use '../../sass/Utils/library' as *;
+
+.profileHost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FF6060;
+    gap: 10px;
+
+    h3 {
+        font-size: map-get($font-size, Title-frame );
+        font-weight: 500;
+        margin: 0;
+        text-align: end;
+        width: 70px;
+        @include bp (mobile) {
+            font-size: map-get($font-size, Small );
+        }
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+        @include bp (mobile) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+

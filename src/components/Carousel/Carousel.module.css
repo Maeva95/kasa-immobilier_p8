@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+}
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  background: #FFF;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+#root {
+  margin: 0;
+  background-color: #FFF;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  #root {
+    max-width: 767px;
+  }
+}
+
+.sectionImageRental {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .sectionImageRental {
+    height: 255px;
+    margin-bottom: 2px;
+  }
+}
+.sectionImageRental .arrowLeft {
+  position: absolute;
+  z-index: 1;
+  height: 110px;
+  left: -8px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .sectionImageRental .arrowLeft {
+    height: 50px;
+    margin: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .sectionImageRental .arrowLeft {
+    height: 24px;
+  }
+}
+.sectionImageRental .arrowRight {
+  position: absolute;
+  z-index: 1;
+  height: 110px;
+  right: -8px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .sectionImageRental .arrowRight {
+    height: 50px;
+    margin: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .sectionImageRental .arrowRight {
+    height: 24px;
+  }
+}
+.sectionImageRental .slider {
+  display: flex;
+  width: 100%;
+}
+.sectionImageRental .slideActive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .sectionImageRental .slideActive {
+    height: 255px;
+  }
+}
+.sectionImageRental .slideActive img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  animation: fade 1.5s linear;
+}
+@media (max-width: 767px) {
+  .sectionImageRental .slideActive img {
+    border-radius: 10px;
+    height: 255px;
+  }
+}
+.sectionImageRental .slideActive .slideNumber {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+}
+@media (max-width: 767px) {
+  .sectionImageRental .slideActive .slideNumber {
+    font-size: 12px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=Carousel.module.css.map */

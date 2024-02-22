@@ -1,0 +1,39 @@
+@use '../../sass/Utils/library' as *;
+
+.heroImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bp (mobile){
+        justify-content: flex-start;
+    }
+
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 223px;
+        border-radius: 25px;
+        filter: contrast(60%);
+        @include bp (mobile){
+            height: 111px;
+            border-radius: 10px;
+        }
+    }
+    & h1{
+        position: absolute;
+        font-size: map-get($font-size, Title-home);
+        font-weight: map-get($font-weight, Medium);
+        color: $color-font-secondary;
+        @include bp (tab) {
+            font-size: map-get($font-size, Title-apartment);
+            text-align: center;
+        }
+        @include bp (mobile) {
+            font-size: map-get($font-size, Subtitle);
+            text-align: start;
+            padding-left: 16px;
+            padding-right: 126px;
+
+        }
+    }
+}

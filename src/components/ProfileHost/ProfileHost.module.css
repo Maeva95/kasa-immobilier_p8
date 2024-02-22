@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+}
+.profileHost {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #FF6060;
+  gap: 10px;
+}
+.profileHost h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-align: end;
+  width: 70px;
+}
+@media (max-width: 767px) {
+  .profileHost h3 {
+    font-size: 12px;
+  }
+}
+.profileHost img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .profileHost img {
+    width: 32px;
+    height: 32px;
+  }
+}/*# sourceMappingURL=ProfileHost.module.css.map */

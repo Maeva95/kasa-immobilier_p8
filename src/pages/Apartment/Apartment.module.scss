@@ -1,0 +1,127 @@
+@use '../../sass/Utils/library' as *;
+
+.mainContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 100px;
+    @include bp (mobile) {
+        padding: 27px 20px;
+        gap: 13px;
+    }    
+}
+
+.sectionInfo {
+    color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include bp (mobile) {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 0px;
+    }
+    .infoRental {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        @include bp (mobile) {
+            gap: 10px;
+        }
+        .rentalTitle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            &__detail{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+    
+                h2{
+                    color: #FF6060;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin: 0;
+                    font-weight: map-get($font-weight, Medium);
+                    font-size: map-get($font-size, Title-apartment);
+                    @include bp (tab) {
+                        font-size: map-get($font-size, Subtitle);
+                    }
+                    @include bp (mobile) {
+                        font-size: map-get($font-size, Title-frame);
+                    }
+                }
+                p{
+                    font-size: map-get($font-size, Title-frame);
+                    margin: 0;
+                    @include bp (tab) {
+                        font-size: map-get($font-size, Tag);
+                    }
+                    @include bp (mobile) {
+                        font-size: map-get($font-size, Tag);
+                    }
+                }
+            }
+            &__tag {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                color: #fff;
+                padding: 0;
+                li{
+                    background: #FF6060;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 5px 30px;
+                    font-size: map-get($font-size, Tag );
+                    list-style-type: none;
+                    @include bp (tab) {
+                        padding: 8px 21px;
+                        font-size: map-get($font-size, Medium );
+                    }
+                    @include bp (mobile) {
+                        padding: 2px 15px;
+                        font-size: map-get($font-size, XSmall );
+                        border-radius: 7px;
+                        line-height: 142.6%;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .infoHost {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 21px;
+        width: 20%;
+        margin: 0;
+        @include bp (mobile) {
+            flex-direction: row-reverse;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+    }
+    
+}
+
+.sectionCollapse {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    @include bp (tab) {     
+        gap: 40px;
+    }
+    @include bp (mobile) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+}
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .ratingContainer {
+    justify-content: flex-start;
+    gap: 7px;
+  }
+}
+.ratingContainer span {
+  height: 52px;
+}
+.ratingContainer img {
+  display: flex;
+  height: 24px;
+}
+@media (max-width: 1024px) {
+  .ratingContainer img {
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .ratingContainer img {
+    height: 14px;
+  }
+}/*# sourceMappingURL=Rating.module.css.map */

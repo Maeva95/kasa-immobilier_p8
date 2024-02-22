@@ -1,0 +1,39 @@
+@use '../../sass/Utils/library' as *;
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+    width: 100%;
+    color: $color-font-primary;
+    margin: 139px 0;
+    text-align: center;
+    @include bp (mobile) {
+        gap: 113px;
+        margin: 113px 0;
+        padding: 0 50px;
+    }
+    h1 {
+        font-size: map-get($font-size, Title-errorPage);
+        font-weight: map-get($font-weight, Bold);
+        margin: 0;
+        @include bp (mobile) {
+            font-size: map-get($font-size , Title-Responsive-ErroPage);
+        }
+    }
+    p {
+        font-size: map-get($font-size, Title-apartment);
+        margin: 0;
+        @include bp (mobile) {
+            font-size: map-get($font-size , Title-frame);
+        }
+    }
+    a {
+        font-size: map-get($font-size, Title-frame);
+        color:$color-font-primary ;
+        @include bp (mobile) {
+            font-size: map-get($font-size , Tag);
+        }
+    }
+}

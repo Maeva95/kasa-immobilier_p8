@@ -1,0 +1,31 @@
+//VARIABLES
+
+$color-bg: #FFF;
+$color-bg-frame: #F6F6F6;
+$color-bg-footer: #000;
+$color-font-primary: #FF6060;
+$color-font-secondary: #FFF;
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+}
+$font-size:(Title-errorPage: 288px, Title-Responsive-ErroPage: 96px, Title-home: 48px, Title-apartment: 36px, Subtitle: 24px, Title-frame: 18px, Tag: 14px, Medium: 13px,Small: 12px, XSmall: 10px);
+$font-weight:(Bold: 700, Medium: 500, Regular: 400);
+$breakpoints: ('tab': 1024px, 'mobile': 767px);
+
+//MIXINS
+
+@mixin bp($breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @if $value != null {
+        @media (max-width: $value){
+            @content;
+        }
+    }
+    @else {
+        @warn "Malheureusement, aucune valeur n’a pu être récupérée sur `#{$breakpoint}`. "
+        + "Les points d’arrêt disponibles sont: #{map-keys($breakpoints)}.";
+    }
+}
+

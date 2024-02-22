@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: map-get($font-size, Title-frame);
+    font-weight: map-get($font-weight, Normal );
+}

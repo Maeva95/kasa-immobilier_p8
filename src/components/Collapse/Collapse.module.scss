@@ -1,0 +1,111 @@
+@use '../../sass/style.scss' as *;
+
+
+.collapseClose {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @include bp (mobile) {
+        width: 100%;
+    }
+}
+
+
+button{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 52px;
+    background-color: $color-font-primary;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    text-align: start;
+    cursor: pointer;
+    outline: 0;
+    width: 100%;
+    @include bp (tab) {
+        padding: 0;
+        height: 40px;
+    }
+    @include bp (mobile) {
+        height: 30px;
+    }
+    h2{
+        color: #fff;
+        font-size: map-get($font-size, Subtitle );
+        font-weight: map-get($font-weight, Medium);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 5;
+        position: absolute;
+        @include bp (tab) {
+            font-size: map-get($font-size, Title-frame);
+        }
+        @include bp (mobile) {
+            font-size: map-get($font-size, Small);
+        }
+    }
+    img {
+        height: 20px;
+        position: absolute;
+        padding: 0 20px;
+        align-self:flex-end;
+        @include bp (tab) {
+            height: 13px;
+        }
+        @include bp (mobile) {
+            height: 10px;
+        }
+    }
+
+}
+
+.collapseIcon {
+    &__close{
+        transform: rotate(180deg);
+        transition: transform 470ms linear;
+    }
+    &__open {
+        transform: rotate(0deg);
+        transition: transform 470ms linear;
+    }
+}
+
+.collapseContent {
+    box-sizing: border-box;
+    font-size: map-get($font-size, Title-frame);
+    font-weight: map-get($font-weight, Regular);
+    color:$color-font-primary;
+    overflow: hidden;
+    transition: height 470ms linear;
+    @include bp (tab) {
+        font-size: map-get($font-size, Tag);
+    }
+    @include bp (mobile) {
+        font-size: map-get($font-size, Small);
+    }
+    p{
+        background-color: $color-bg-frame;
+        padding: 13px 20px 20px 20px;
+        border-radius: 0 0 5px 5px;
+        color:$color-font-primary;
+    }
+    ul {
+        background-color: $color-bg-frame;
+        padding: 13px 20px 20px 20px;
+        border-radius: 0 0 5px 5px;
+        margin: 0;
+        @include bp (tab) {
+            font-size: map-get($font-size, Tag);
+        }
+        @include bp (mobile) {
+            font-size: map-get($font-size, Small);
+        }
+        li {
+            list-style: none;
+        }
+    }
+}
+

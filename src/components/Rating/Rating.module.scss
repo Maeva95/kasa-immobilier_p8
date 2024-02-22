@@ -1,0 +1,25 @@
+@use '../../sass/Utils/library' as *;
+
+.ratingContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-end;
+    @include bp (mobile) {
+        justify-content: flex-start;
+        gap: 7px;
+    }
+    span{
+        height: 52px;
+    }
+    img {
+        display: flex;
+        height: 24px;
+        @include bp (tab) {
+            height: 18px;
+        }
+        @include bp (mobile) {
+            height: 14px;
+        }
+    }
+}

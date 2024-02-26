@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kasa-immobilier_p8/static/css/main.f3f3c3ba.css",
+    "main.css": "/kasa-immobilier_p8/static/css/main.ff064d9b.css",
     "main.js": "/kasa-immobilier_p8/static/js/main.f2cd9fe7.js",
     "static/js/453.3536ca1f.chunk.js": "/kasa-immobilier_p8/static/js/453.3536ca1f.chunk.js",
     "static/media/imageheroA.png": "/kasa-immobilier_p8/static/media/imageheroA.dc7a08e1faa2e14de0bd.png",
@@ -11,12 +11,12 @@
     "static/media/chevron_left.svg": "/kasa-immobilier_p8/static/media/chevron_left.984efb8b8f6e20cc36b2b22664b3eb0a.svg",
     "static/media/chevron_right.svg": "/kasa-immobilier_p8/static/media/chevron_right.72096daf83de25a81be8d84caeec4815.svg",
     "static/media/Expand.svg": "/kasa-immobilier_p8/static/media/Expand.34e27c019ba39871791b16100cbcf7c1.svg",
-    "main.f3f3c3ba.css.map": "/kasa-immobilier_p8/static/css/main.f3f3c3ba.css.map",
+    "main.ff064d9b.css.map": "/kasa-immobilier_p8/static/css/main.ff064d9b.css.map",
     "main.f2cd9fe7.js.map": "/kasa-immobilier_p8/static/js/main.f2cd9fe7.js.map",
     "453.3536ca1f.chunk.js.map": "/kasa-immobilier_p8/static/js/453.3536ca1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3f3c3ba.css",
+    "static/css/main.ff064d9b.css",
     "static/js/main.f2cd9fe7.js"
   ]
 }

@@ -13,7 +13,7 @@ export default function Apartment() {
     
     const descriptionTitle = 'Description'
     const equipmentTitle = 'Équipement'
-    const url = '/logement.json'
+    const url = 'https://maeva95.github.io/kasa-immobilier_p8/logement.json'
     const {id} = useParams()
     const navigate = useNavigate()
     const apartment = FetchData(url) //Récupération des data du fichier Json des appartements

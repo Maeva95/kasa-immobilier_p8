@@ -81,4 +81,14 @@ header .nav__linkActive {
   color: #FF6060;
   text-decoration: underline;
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  header .nav__linkActive {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  header .nav__linkActive {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Header.module.css.map */

@@ -9,7 +9,7 @@ import Footer from '../../components/Footer'
 
 export default function About() {
 
-    const url = '/value.json'
+    const url = 'https://maeva95.github.io/kasa-immobilier_p8//value.json'
     const value = FetchData(url)
     if (value.isLoading) {
         return <Loader />

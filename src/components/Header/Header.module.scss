@@ -68,8 +68,13 @@ header {
             color: $color-font-primary;
             text-decoration: underline;
             font-size: map-get($font-size, Subtitle );
+            @include bp(mobile) {
+                font-size: map-get($font-size, Medium );
+            }
+            @include bp(mobile) {
+                font-size: map-get($font-size, Small );
+            }
         }
-        
     }
 }
 
